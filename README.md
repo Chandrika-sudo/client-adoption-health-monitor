@@ -30,10 +30,11 @@ python -m streamlit run app.py
 Open the local URL printed by Streamlit, normally `http://localhost:8501`. Stop it with Ctrl+C. If PowerShell blocks activation, use the virtual environment's interpreter directly without changing execution policy:
 
 ```powershell
-.\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.\.venv\Scripts\python.exe -m src.generate_data
-.\.venv\Scripts\python.exe -m pytest -q
-.\.venv\Scripts\python.exe -m streamlit run app.py
+.\.venv\Scripts\python.exe
+pip install -r requirements.txt
+src.generate_data
+pytest -q
+streamlit run app.py
 ```
 
 Run commands from the project root. Dataset and SQL paths resolve relative to their modules. Regeneration replaces the four synthetic CSV files with the same seed-42 data. A missing dataset produces an instruction in the dashboard; no data is silently generated. Header-only CSV tables are supported. Malformed input produces a visible loading error.
