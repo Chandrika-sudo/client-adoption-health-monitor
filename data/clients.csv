@@ -1,0 +1,6 @@
+client_id,company_name,total_seats,expected_office_days,booking_window_days,onboarding_date
+C001,Northstar Labs,105,3,7,2026-10-01
+C002,CedarWorks,95,3,7,2026-10-01
+C003,Orbit Studio,100,3,14,2026-10-01
+C004,MapleBridge,90,3,7,2026-10-01
+C005,Harbor Collective,110,3,7,2026-10-01
